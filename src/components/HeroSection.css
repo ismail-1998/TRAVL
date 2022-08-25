@@ -1,0 +1,85 @@
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.hero-container {
+    background-image: url('../assets/images/img-home.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    
+}
+
+.hero-container > h1 {
+    text-transform: uppercase;
+    font-size: 100px;
+    color: #fff;
+}
+
+.hero-container > p {
+    font-size: 40px;
+    color: #fff;
+}
+
+.hero-btns {
+    margin-top: 10px;
+}
+
+.hero-btns .btn {
+    margin: 6px;
+}
+
+.fa-play-circle {
+    margin-left: 4px;
+}
+
+@media screen and (max-width: 960px) {
+    .hero-container > h1 {
+        font-size: 70px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container > h1 {
+        font-size: 50px;
+    }
+    
+    .hero-container > p {
+        font-size: 25px;
+    }
+
+   .btn-mobile {
+        display: block;
+        text-decoration: none;
+    }
+
+    .btn {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 444px) {
+    .hero-container > h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .hero-container > p {
+        font-size: 20px;
+    }
+    
+}
